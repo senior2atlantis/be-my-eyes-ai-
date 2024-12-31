@@ -14,4 +14,4 @@ document.getElementById('capture-button').addEventListener('click', () => {
 });
 
 // TO DO: Implement AI functionality
-
+console.log("JavaScript is working!");
