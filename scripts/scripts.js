@@ -34,3 +34,13 @@ console.log('Login successful!');
 console.log('Invalid username or password');
 }
 });
+// Navigate to the welcome page after login
+if (users[username] === password) {
+console.log('Login successful!');
+window.location.href = 'welcome.html';
+}
+
+// Navigate to the camera page from the welcome page
+document.getElementById('next-btn').addEventListener('click', () => {
+window.location.href = 'camera.html';
+});
