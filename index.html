@@ -1,57 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Be My Eyes AI</title>
-    <link rel="stylesheet" href="styles/styles.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="login-section">
-            <h2>Login</h2>
-            <form id="login-form">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username"><br><br>
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password"><br><br>
-                <input type="submit" value="Login">
-            </form>
-        </section>
-        <section id="camera-section">
-            <h2>Camera</h2>
-            <video id="video" width="640" height="480"></video>
-            <button id="capture-button">Capture</button>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Be My Eyes AI</p>
-    </footer>
-    <script src="scripts/script.js"></script>
-<!-- Registration Form -->
-<form id="register-form">
-  <label for="username">Username:</label>
-  <input type="text" id="username" name="username"><br><br>
-  <label for="email">Email:</label>
-  <input type="email" id="email" name="email"><br><br>
-  <label for="password">Password:</label>
-  <input type="password" id="password" name="password"><br><br>
-  <input type="submit" value="Register">
-</form>
+<!-- Sign-up/Login Section -->
+<div id="sign-up-login">
+  <h2>Sign up or Log in</h2>
+  <form id="register-form">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username">
 
-<!-- Sign-up Button -->
-<button id="sign-up-btn">Sign up</button>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
 
-<!-- Clear Instructions -->
-<p>Don't have an account? Click the sign-up button to create one.</p>
-</body>
-</html>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+
+    <input type="submit" value="Register">
+  </form>
+  <button id="login-btn">Log in</button>
+</div>
+
+<!-- Welcome/Introduction Section -->
+<div id="welcome-intro">
+  <h1>Welcome to AZI</h1>
+  <p>This app is designed to help people with visual impairments.</p>
+</div>
+
+<!-- Camera Option Section -->
+<div id="camera-option">
+  <h2>Take a Picture</h2>
+  <button id="camera-btn">Open Camera</button>
+</div>
+
+<!-- AI-powered Feature Section -->
+<div id="ai-feature">
+  <h2>Ask AZI</h2>
+  <p>Point your camera at an object and ask AZI what it is.</p>
+</div>
