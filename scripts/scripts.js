@@ -44,3 +44,15 @@ window.location.href = 'welcome.html';
 document.getElementById('next-btn').addEventListener('click', () => {
 window.location.href = 'camera.html';
 });
+const cameraBtn = document.getElementById('camera-btn');
+
+cameraBtn.addEventListener('click', async () => {
+try {
+const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+const video = document.getElementById('video');
+video.srcObject = stream;
+video.play();
+} catch (error) {
+console.error(error);
+}
+});
