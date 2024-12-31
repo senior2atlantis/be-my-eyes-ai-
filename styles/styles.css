@@ -1,90 +1,42 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #000; /* Black background */
-    color: #fff; /* White text */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 header {
-    background-color: #333; /* Dark gray background */
-    padding: 20px;
-    text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
 }
 
 header nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 header nav ul li {
-    display: inline-block;
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 header nav a {
-    color: #fff; /* White text */
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-}
-
-#login-section {
-    background-color: #444; /* Dark gray background */
-    padding: 20px;
-    border: 1px solid #666; /* Dark gray border */
-}
-
-#login-form {
-    display: flex;
-    flex-direction: column;
-}
-
-#login-form label {
-    margin-bottom: 10px;
-}
-
-#login-form input {
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #666; /* Dark gray border */
-}
-
-#login-form input[type="submit"] {
-    background-color: #333; /* Dark gray background */
-    color: #fff; /* White text */
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#camera-section {
-    background-color: #444; /* Dark gray background */
-    padding: 20px;
-    border: 1px solid #666; /* Dark gray border */
-}
-
-#video {
-    border: 1px solid #666; /* Dark gray border */
-}
-
-#capture-button {
-    background-color: #333; /* Dark gray background */
-    color: #fff; /* White text */
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  display: block;
 }
 
 footer {
-    background-color: #333; /* Dark gray background */
-    padding: 10px;
-    text-align: center;
-    clear: both;
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+  clear: both;
 }
+
