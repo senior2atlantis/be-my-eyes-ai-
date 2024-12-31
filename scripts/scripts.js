@@ -56,3 +56,10 @@ video.play();
 console.error(error);
 }
 });
+const imgUpload = document.getElementById('image-upload');
+
+imgUpload.addEventListener('change', (e) => {
+  const img = e.target.files[0];
+  const imgTensor = tf.browser.fromPixels(img);
+  // Preprocess the image tensor here
+});
