@@ -61,5 +61,13 @@ const imgUpload = document.getElementById('image-upload');
 imgUpload.addEventListener('change', (e) => {
   const img = e.target.files[0];
   const imgTensor = tf.browser.fromPixels(img);
+    const resizedImgTensor = tf.image.resizeBilinear(imgTensor, [224, 224]);
+  const normalizedImgTensor = tf.div(resizedImgTensor, 255)
+   const predictions = await mobilenet.predict(normalizedImgTensor);
+ const results = await predictions.data();
+ console.log(results);
+   
+ // Make predictions with the Mobilenet model here
+});
   // Preprocess the image tensor here
 });
